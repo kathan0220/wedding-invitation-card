@@ -1,0 +1,103 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #28834b, #330f56); /* Purple Gradient Background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Floral Decorations */
+.floral-decoration {
+    position: fixed;
+    z-index: 1;
+    width: 200px;
+    opacity: 0.9;
+}
+
+.floral-decoration.left {
+    top: 0;
+    left: 0;
+}
+
+.floral-decoration.right {
+    top: 0;
+    right: 150px;
+}
+
+/* Invitation Box */
+.invitation-box {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+/* Text Styles */
+.invitation-box h1 {
+    font-size: 70px;
+    color: #3d3d3d; /* Dark Gray for Names */
+    margin: 10px 0;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.invitation-box h1 span {
+    color: #5a5a5a; /* Slightly lighter gray for "&" */
+}
+
+.invitation-box .announcement {
+    font-size: 30px;
+    color: #333333; /* Darker Gray for Announcement Text */
+    margin: 20px 0;
+    font-style: italic;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.invitation-box .date,
+.invitation-box .venue {
+    font-size: 25px;
+    color: #4a4a4a; /* Medium Gray for Details */
+    margin: 10px 0;
+    animation: fadeInUp 2.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
